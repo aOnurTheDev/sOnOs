@@ -25,3 +25,15 @@ It aims to save you time after installation by pre-configuring popular programmi
 
 1. Download the latest `.iso` image from the Releases section.
 2. Flash the ISO to a USB drive using Ventoy, BalenaEtcher, or the `dd` command:
+bash
+sudo dd bs=4M if=sOnOs-x86_64.iso of=/dev/sdX status=progress oflag=sync
+
+3. Boot from the USB drive to launch the live environment and installer.
+
+## Contributing
+
+Since sOnOs is in beta, bug reports, feedback, and pull requests are welcome. Feel free to open an issue or submit a PR on GitHub.
+
+## License
+
+Distributed under the **GPL-2.0** License.
