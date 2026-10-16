@@ -1,4 +1,8 @@
-# sOnOs
+#           ___          ___   
+#     ___  / _ \  _ __  / _ \  ___ 
+#   / __|| | | || '_ \| | | |/ __|
+#    \__ \| |_| || | | | |_| |\__ \
+#    |___/ \___/ |_| |_|\___/ |___/
 
 sOnOs is an Arch Linux-based operating system built for developers and gamers. 
 
