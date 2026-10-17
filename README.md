@@ -37,14 +37,14 @@ It delivers high system performance out of the box by combining optimized system
 1. Download the latest `.iso` image from the Releases section.
 
 2. Flash the ISO to a USB drive using Ventoy, BalenaEtcher, or the `dd` command:
-```bash
-sudo dd bs=4M if=sOnOs-x86_64.iso of=/dev/sdX status=progress oflag=sync
-
-    Boot from the USB drive. To start the automated installation, run:
-
 Bash
 
-archinstall --config /root/user_configuration.json
+sudo dd bs=4M if=sOnOs-x86_64.iso of=/dev/sdX status=progress oflag=sync
+
+Boot from the USB drive. To start the automated installation, run:
+Bash
+
+soninstall
 
 Contributing
 
