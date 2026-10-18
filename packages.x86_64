@@ -1,0 +1,235 @@
+# =====================================================================
+# SYSTEM BASE & ARCHISO CORE
+# =====================================================================
+base
+linux
+linux-firmware
+linux-firmware-marvell
+linux-headers
+sof-firmware
+amd-ucode
+intel-ucode
+broadcom-wl-dkms
+dkms
+mkinitcpio
+mkinitcpio-archiso
+mkinitcpio-nfs-utils
+
+# =====================================================================
+# BOOTLOADERS & SYSTEM UTILS
+# =====================================================================
+arch-install-scripts
+archinstall
+efibootmgr
+edk2-shell
+grub
+refind
+syslinux
+memtest86+
+memtest86+-efi
+sudo
+systemd
+xdg-utils
+
+# =====================================================================
+# HARDWARE, DISPLAY & GPU DRIVERS
+# =====================================================================
+nvidia-open
+nvidia-settings
+nvidia-utils
+openrgb
+bolt
+dmidecode
+lsscsi
+mmc-utils
+pciutils
+sdparm
+sg3_utils
+usbutils
+usb_modeswitch
+usbmuxd
+libfido2
+libusb-compat
+pcsclite
+tpm2-tools
+tpm2-tss
+openpgp-card-tools
+
+# =====================================================================
+# DISK, FILESYSTEMS & RECOVERY
+# =====================================================================
+bcachefs-tools
+btrfs-progs
+cryptsetup
+dosfstools
+e2fsprogs
+exfatprogs
+f2fs-tools
+fatresize
+fsarchiver
+gpart
+gptfdisk
+jfsutils
+lvm2
+mdadm
+mtools
+nilfs-utils
+ntfsprogs
+nvme-cli
+partclone
+parted
+partimage
+squashfs-tools
+testdisk
+udftools
+xfsprogs
+clonezilla
+ddrescue
+pv
+
+# =====================================================================
+# NETWORKING & WIRELESS
+# =====================================================================
+bind
+bind-tools
+dhcpcd
+dnsmasq
+ethtool
+iw
+iwd
+ldns
+modemmanager
+ndisc6
+networkmanager
+network-manager-applet
+nfs-utils
+nmap
+openconnect
+openssh
+openvpn
+ppp
+pptpclient
+reflector
+tcpdump
+vpnc
+wireguard-tools
+wireless-regdb
+wireless_tools
+wpa_supplicant
+wvdial
+xl2tpd
+open-iscsi
+
+# =====================================================================
+# VIRTUALIZATION & CONTAINERS
+# =====================================================================
+docker
+docker-compose
+podman
+qemu-full
+qemu-guest-agent
+virt-manager
+open-vm-tools
+virtualbox-guest-utils
+hyperv
+
+# =====================================================================
+# COMPILERS, BUILD TOOLS & CORE DEV
+# =====================================================================
+autoconf
+automake
+bison
+cmake
+clang
+doxygen
+flex
+gcc
+gdb
+lld
+lldb
+make
+ninja
+pkgconf
+valgrind
+
+# =====================================================================
+# PROGRAMMING LANGUAGES & RUNTIMES
+# =====================================================================
+rust
+cargo
+go
+python
+python-pip
+python-virtualenv
+python-poetry
+nodejs
+npm
+yarn
+pnpm
+deno
+jdk-openjdk
+lua
+luajit
+
+# =====================================================================
+# EMBEDDED & HARDWARE DEV
+# =====================================================================
+arduino-cli
+avr-binutils
+avr-gcc
+avr-libc
+avrdude
+dfu-util
+minicom
+openocd
+picocom
+stlink
+
+# =====================================================================
+# CLI UTILITIES, EDITORS & TERMINALS
+# =====================================================================
+b43-fwcutter
+brltty
+code
+curl
+darkhttpd
+diffutils
+espeakup
+fastfetch
+fd
+foot-terminfo
+ghostty-terminfo
+gpm
+grml-zsh-config
+hdparm
+htop
+btop
+irssi
+jq
+kitty-terminfo
+kmscon-terminfo
+less
+lftp
+livecd-sounds
+lynx
+man-db
+man-pages
+mc
+nano
+neovim
+p7zip
+ripgrep
+rsync
+rxvt-unicode-terminfo
+screen
+sequoia-sq
+terminus-font
+tmux
+tree
+unzip
+vim
+wget
+zip
+tar
+zsh
+git
