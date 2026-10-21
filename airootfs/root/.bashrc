@@ -1,7 +1,13 @@
-alias soninstall="archinstall --config /root/user_configuration.json"
+#
+# ~/.bashrc
+#
+\
+[[ $- != *i* ]] && return
 
+alias soninstall="archinstall --config /root/user_configuration.json"
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias sonfetch='fastfetch --file-raw /etc/fastfetch/sonos.txt'
+
 PS1='[\u@\h \W]\$ '
-alias sonfetch='fastfetch --file-raw ~/sOnOs2/sOn2/archlive/airootfs/etc/fastfetch/sonos.txt'
-source ./.bashrc
+sonfetch
