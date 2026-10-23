@@ -1,63 +1,62 @@
 {
-  "archinstall-version": "2.8.1",
-  "audio_server": "pipewire",
-  "bootloader": "systemd-bootctl",
-  "hostname": "sOnOs",
-  "nic": {
-    "NetworkManager": true
-  },
-  "packages": [
-    "base",
-    "linux",
-    "linux-firmware",
-    "linux-headers",
-    "base-devel",
-    "networkmanager",
-    "network-manager-applet",
-    "bluez",
-    "bluez-utils",
-    "blueman",
-    "sudo",
-    "nano",
-    "vim",
-    "neovim",
-    "git",
-    "curl",
-    "fastfetch",
-    "btop",
-    "htop",
-    "tree",
-    "jq",
-    "unzip",
-    "zip",
-    "p7zip",
-    "rsync",
-    "zsh",
-    "python",
-    "python-pip",
-    "nodejs",
-    "npm",
-    "gcc",
-    "make",
-    "cmake",
-    "clang",
-    "rust",
-    "cargo",
-    "nvidia-open",
-    "nvidia-utils",
-    "nvidia-settings",
-    "sddm"
-  ],
-  "post_install_commands": [
-    "cp /etc/os-release /mnt/etc/os-release",
-    "cp -r /etc/skel/. /mnt/etc/skel/",
-    "cp -r /etc/skel/. /mnt/root/",
-    "bash -c 'for user_dir in /mnt/home/*; do [ -d \"$user_dir\" ] && cp -r /etc/skel/. \"$user_dir/\"; done'"
-  ],
-  "profile_config": {
-    "profile": {
-      "mode": "desktop",
-      "name": "kde-plasma-desktop"
-    }
-  }
+"archinstall-version": "2.8.1",
+"audio_server": "pipewire",
+"hostname": "sOnOs",
+"nic": {
+"NetworkManager": true
+},
+"packages": [
+"base",
+"linux",
+"linux-firmware",
+"linux-headers",
+"base-devel",
+"networkmanager",
+"network-manager-applet",
+"bluez",
+"bluez-utils",
+"blueman",
+"sudo",
+"nano",
+"vim",
+"neovim",
+"git",
+"curl",
+"fastfetch",
+"btop",
+"htop",
+"tree",
+"jq",
+"unzip",
+"zip",
+"p7zip",
+"rsync",
+"zsh",
+"python",
+"python-pip",
+"nodejs",
+"npm",
+"gcc",
+"make",
+"cmake",
+"clang",
+"rust",
+"cargo",
+"nvidia-open",
+"nvidia-utils",
+"nvidia-settings",
+"sddm"
+],
+"post_install_commands": [
+"systemctl enable sddm",
+"systemctl enable bluetooth",
+"cp -r /etc/skel/. /root/",
+"bash -c 'for user_dir in /home/*; do [ -d \"$user_dir\" ] && cp -r /etc/skel/. \"$user_dir/\"; done'"
+],
+"profile_config": {
+"profile": {
+"mode": "desktop",
+"name": "kde-plasma-desktop"
+}
+}
 }
